@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Desain Responsif</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<style type="text/css">
+		#header {
+			height: 150px;
+			padding: 20px;
+			border: 2px solid red;
+			text-align: center;
+		}
+
+		#main {
+			margin: auto;
+			text-align: center;
+			padding: 20px;
+			height: 200px;
+			border: 2px solid red;
+		}
+		
+		.container {
+			text-align: center;
+		}
+
+		.box {
+			display: inline-block; /* Centering + dengan inline-block */
+			text-align: center;
+			width: 22vw;
+			margin: 0 1% 20px 0;
+			padding: 50px 0;
+			background: red;
+			border: 2px solid red;
+			color: white;
+			font-weight: bold;
+		}
+
+		#footer {
+			padding: 20px;
+			height: 120px;
+			border: 2px solid red;
+			text-align: center;
+		}
+
+		/* Tablet */
+		@media only screen and (max-width: 1080px) {
+			#main {
+				height: 360px;
+			}
+
+			.box {
+				width: 45%;
+				margin: 0 4% 20px 0;
+			}
+		}
+
+		/* Smartphone */
+		@media only screen and (max-width: 640px) {
+			#main {
+				height: 640px;
+			}
+
+			.box {
+				width: 100%;
+				margin: 0 0 20px 0;
+			}
+		}
+	</style>
+
+</head>
+<body>
+
+	<div id="wrapper">
+		<div id="header">
+			<h2>Header</h2>
+		</div>
+
+		<div id="main">
+			<h2>Services</h2>
+			<div class="container">
+				<div class="box">BOX 1</div>
+				<div class="box">BOX 2</div>
+				<div class="box">BOX 3</div>
+				<div class="box">BOX 4</div>
+			</div>
+		</div>
+
+		<div id="footer">
+			<h2>Footer</h2>
+		</div>
+	</div>
+
+</body>
+</html>

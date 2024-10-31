@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Desain Responsif Flex</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<style type="text/css">
+		#header{
+			height: 150px;
+			padding: 20px;
+			border: 2px solid red;
+			text-align: center;
+		}
+
+		#main{
+			margin: auto;
+			padding: 20px;
+			border: 2px solid red;
+			text-align: center;
+		}
+
+		.container{
+			display: flex;
+ 			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		.box{
+			flex: 1;
+			margin: 0 5px;
+			color: white;
+			font-weight: bold;
+			height: 120px;
+			background: red;
+			border: 2px solid red;
+			display: flex; /* Flexbox dalam box */
+			align-items: center; /* Vertical center */
+			justify-content: center; /* Horizontal center */
+		}
+
+		#footer{
+			padding: 20px;
+			height: 120px;
+			border: 2px solid red;
+			text-align: center;
+		}
+
+		/*Tablet*/
+		@media only screen and (max-width: 1080px){
+			#main{
+				height: 360px;
+			}
+
+			.box{
+				flex: 1 0 40%;
+				margin: 0 4% 20px 0;
+			}
+		}
+
+		/*Smartphone*/
+		@media only screen and (max-width: 640px){
+			#main{
+				height: 640px;
+			}
+		
+			.box{
+				flex: 1 0 90%;
+				width: 100%;
+				margin: 0 0 20px 0;
+			}
+		}
+
+	</style>
+
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<h2>Header</h2>
+		</div>
+
+		<div id="main">
+			<h2>Services</h2>
+			<div class="container">
+				<div class="box"> BOX 1 </div>
+				<div class="box"> BOX 2 </div>
+				<div class="box"> BOX 3 </div>
+				<div class="box"> BOX 4 </div>
+			</div>
+		</div>
+
+		<div id="footer">
+			<h2>Footer</h2>
+		</div>
+	</div>
+
+</body>
+</html>
