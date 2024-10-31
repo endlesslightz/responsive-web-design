@@ -85,6 +85,3 @@ responsive-web-design
 
 Proyek ini dilisensikan di bawah [MIT License](LICENSE).
 
-```
-
-File `README.md` ini menyediakan panduan dasar dan contoh kode untuk membantu memahami konsep responsive design menggunakan CSS native, Flexbox, dan Grid.
