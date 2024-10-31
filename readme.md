@@ -1,5 +1,5 @@
 
-```markdown
+
 # Responsive Web Design dengan CSS Native, Flexbox, dan Grid
 
 Proyek ini adalah contoh sederhana yang menjelaskan konsep **Responsive Web Design** menggunakan CSS native, Flexbox, dan CSS Grid. Tujuannya adalah untuk membantu pemula dan pengembang web memahami cara membangun tata letak web yang dapat menyesuaikan diri dengan berbagai ukuran layar, mulai dari perangkat seluler hingga desktop.
@@ -13,7 +13,6 @@ Proyek ini adalah contoh sederhana yang menjelaskan konsep **Responsive Web Desi
 - [Contoh Struktur](#contoh-struktur)
 - [Lisensi](#lisensi)
 
----
 
 ## Tentang Responsive Web Design
 
